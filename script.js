@@ -35,3 +35,13 @@ for (let key in student) {
 };
  writeElement.innerHTML = `<div>${totKey}</div>`;
  
+//  ! ----------------------------------------------------------------
+
+// ! Creo un array di oggetti
+
+const classes = [
+   {name: 'Matteo', cognome: 'Imbimbo', eta: 30},
+   {name: 'Marco', cognome: 'neri', eta: 35},
+   {name: 'Giovanni', cognome: 'Rossi', eta: 21},
+   {name: 'Anna', cognome: 'Biaggi', eta: 25},
+];
