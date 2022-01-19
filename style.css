@@ -14,3 +14,10 @@
    padding: 10px;
    width: 25%;
 }
+
+#class-plus {
+   width: 25%;
+   padding: 10px;
+   border: 1px double grey;
+
+}

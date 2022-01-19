@@ -69,3 +69,18 @@ for(let i = 0; i < classes.length; i++) {
 console.log(print);
 
 }
+
+
+// ! ---------------------------------------------------------------------- 
+
+// * Chiedo all'utente il nome il cognome e l'età 
+
+const newName = prompt('Inserisci il tuo nome').trim();
+const newSurname = prompt('Inserisci il tuo cognome').trim();
+const newAge = parseInt(prompt('Inserisci la tua età'));
+if(isNaN(newAge)) {
+   newAge = parseInt(prompt('Inserisci la tua età'));
+}
+
+
+classes.push({ name:`${newName}`, cognome: `${newSurname}`, eta: newAge});
