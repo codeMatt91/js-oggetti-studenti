@@ -14,8 +14,8 @@ Usiamo il DOM per stampare e chiedere le informazioni all'utente!
 */
 
 // ! Recupero a schermo dove scrivere
-const writeElement = document.getElementById('propriertes');
-
+const writeElement = document.getElementById('student');
+const clas = document.getElementById('class');
 
 // ! Creo un oggetto 
 const student = {
@@ -45,3 +45,4 @@ const classes = [
    {name: 'Giovanni', cognome: 'Rossi', eta: 21},
    {name: 'Anna', cognome: 'Biaggi', eta: 25},
 ];
+console.log(classes);
