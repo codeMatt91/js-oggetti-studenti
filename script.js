@@ -54,14 +54,18 @@ console.log(classes);
 
 // * Faccio il ciclo per prendere tutti gli alunni della classe 
 
+let print = '';
 for(let i = 0; i < classes.length; i++) {
    let clasStudent = classes[i];
-
-      let print = '';
+      
       for(let key in clasStudent){
-         print += [key] + ':' + clasStudent[key] + ' ';
-         clas.innerText = print;
+         if(key !== 'eta'){
+
+            print += [key] + ':' + clasStudent[key] + ' ';
+         }
       }
+
+      clas.innerText = print;
 console.log(print);
 
 }
