@@ -13,7 +13,8 @@ Usiamo il DOM per stampare e chiedere le informazioni all'utente!
 
 */
 
-// ! Recupero a schermo dove scrivere
+// * Recupero a schermo dove scrivere
+
 const writeElement = document.getElementById('student');
 const clas = document.getElementById('class');
 
@@ -25,7 +26,9 @@ const student = {
 }
 console.log(student);
 
-// ! Eseguo ciclo per stampare a schermo 
+
+
+// * Eseguo ciclo per stampare a schermo 
 
 let totKey = '';
 for (let key in student) {
@@ -33,11 +36,13 @@ for (let key in student) {
    totKey += [key] + ':' + student[key] + ' ';
    
 };
+
  writeElement.innerHTML = `<div>${totKey}</div>`;
  
+
 //  ! ----------------------------------------------------------------
 
-// ! Creo un array di oggetti
+// * Creo un array di oggetti
 
 const classes = [
    {name: 'Matteo', cognome: 'Imbimbo', eta: 30},
@@ -46,3 +51,15 @@ const classes = [
    {name: 'Anna', cognome: 'Biaggi', eta: 25},
 ];
 console.log(classes);
+
+// * Faccio il ciclo per prendere tutti gli alunni della classe 
+
+for(let i = 0; i < classes.length; i++) {
+   let clasStudent = classes[i];
+
+      let print = '';
+      for(let key in clasStudent){
+         print += clasStudent.name + ':' + clasStudent.name[key] + ' ';
+      }
+console.log(print);
+}
