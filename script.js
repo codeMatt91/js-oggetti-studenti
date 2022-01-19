@@ -75,12 +75,35 @@ console.log(print);
 
 // * Chiedo all'utente il nome il cognome e l'età 
 
+/*
 const newName = prompt('Inserisci il tuo nome').trim();
 const newSurname = prompt('Inserisci il tuo cognome').trim();
 const newAge = parseInt(prompt('Inserisci la tua età'));
 if(isNaN(newAge)) {
    newAge = parseInt(prompt('Inserisci la tua età'));
 }
-
+*/
 
 classes.push({ name:`${newName}`, cognome: `${newSurname}`, eta: newAge});
+
+
+// ! ----------------- BUNUS ---------------------
+
+const inputName = document.getElementById('name');
+const inputSurname = document.getElementById('surname');
+const inputEta = document.getElementById('eta');
+const generate = document.getElementById('generate');
+const write = document.querySelector('.info');
+
+generate.addEventListener('click', function(){
+   const inputUserName = inputName.value;
+   const inputUserSurname = inputSurname.value;
+   const inputUserEta = inputEta.value;
+
+   const paragraph = document.createElement('div');
+   paragraph.className = 'clicked';
+   write.appendChild(paragraph);
+
+   paragraph.innerText = `il Sign. ${inputUserName} ${inputUserSurname}  di età ${inputUserEta} è pregato di spostare l'auto `;
+
+});
