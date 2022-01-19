@@ -13,7 +13,8 @@ Usiamo il DOM per stampare e chiedere le informazioni all'utente!
 
 */
 
-
+// ! Recupero a schermo dove scrivere
+const writeElement = document.getElementById('propriertes');
 
 
 // ! Creo un oggetto 
@@ -24,3 +25,13 @@ const student = {
 }
 console.log(student);
 
+// ! Eseguo ciclo per stampare a schermo 
+
+let totKey = '';
+for (let key in student) {
+   
+   totKey += [key] + ':' + student[key] + ' ';
+   
+};
+ writeElement.innerHTML = `<div>${totKey}</div>`;
+ 
