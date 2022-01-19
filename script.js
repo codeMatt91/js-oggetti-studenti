@@ -59,7 +59,9 @@ for(let i = 0; i < classes.length; i++) {
 
       let print = '';
       for(let key in clasStudent){
-         print += clasStudent.name + ':' + clasStudent.name[key] + ' ';
+         print += [key] + ':' + clasStudent[key] + ' ';
+         clas.innerText = print;
       }
 console.log(print);
+
 }
