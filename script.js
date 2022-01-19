@@ -12,3 +12,15 @@ BONUS:
 Usiamo il DOM per stampare e chiedere le informazioni all'utente!
 
 */
+
+
+
+
+// ! Creo un oggetto 
+const student = {
+   name: 'Matteo',
+   cognome: 'Imbimbo',
+   eta: 30,
+}
+console.log(student);
+
